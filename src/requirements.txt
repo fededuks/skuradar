@@ -1,0 +1,6 @@
+pandas
+openpyxl
+requests
+streamlit
+fuzzywuzzy
+python-levenshtein
