@@ -12,10 +12,15 @@ COSTO_ENVIO_ESTIMADO = 800  # ARS
 ML_SITE = "MLA"        # MercadoLibre Argentina
 
 # 🔐 CREDENCIALES DE MERCADOLIBRE (reemplaza con las tuyas)
+# 🔐 CREDENCIALES DE MERCADOLIBRE
 import os
 
 CLIENT_ID = os.getenv("CLIENT_ID")
 CLIENT_SECRET = os.getenv("CLIENT_SECRET")
+
+# 🔍 Para depuración (se verá en los logs de Render)
+print(f"🔍 CLIENT_ID: {CLIENT_ID}")
+print(f"🔍 CLIENT_SECRET: {CLIENT_SECRET}")
 
 # Archivo para cachear el token
 TOKEN_FILE = "ml_token_cache.json"
